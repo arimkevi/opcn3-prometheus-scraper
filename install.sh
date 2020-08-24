@@ -12,6 +12,7 @@ apt -y install virtualenv python3 python3-pip;
 
 echo "Creating user..";
 useradd -m opcn3 ;
+usermod -a -G dialout opcn3;
 
 echo "Downloading repo..";
 curl -sL "https://github.com/arimkevi/opcn3-prometheus-scraper/archive/master.zip" > "/tmp/opcn3_prometheus.zip";
