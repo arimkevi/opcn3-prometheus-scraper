@@ -100,7 +100,7 @@ if __name__ == '__main__':
 
     print('Starting main loop.')
     while True:
-        newData = v.getData(DEV_TTY, 'OPC-N3', handle_data)
+        newData = SENSOR.getData(DEV_TTY, 'OPC-N3', handle_data)
         time.sleep(MEASURING_DELAY)
 
 
