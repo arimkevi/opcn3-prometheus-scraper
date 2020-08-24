@@ -3,8 +3,8 @@ Description=OPCN3 Prometheus scraper
 
 [Service]
 Type=simple
-WorkingDirectory=/home/opcn3
-ExecStart=/home/opcn3/venv/bin/python3 main.py
+WorkingDirectory=/home/opcn3/opcn3-prometheus-scraper
+ExecStart=/home/opcn3/opcn3-prometheus-scraper/venv/bin/python3 main.py
 User=opcn3
 Group=opcn3
 Restart=always

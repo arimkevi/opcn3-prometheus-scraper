@@ -18,7 +18,7 @@ curl -sL "https://github.com/arimkevi/opcn3-prometheus-scraper/archive/master.zi
 unzip -qq -o "/tmp/opcn3_prometheus.zip" -d "/home/opcn3";
 mv /home/opcn3/opcn3-prometheus-scraper-master /home/opcn3/opcn3-prometheus-scraper
 chown -R opcn3:opcn3 /home/opcn3/opcn3-prometheus-scraper/
-rm /tmp/opcn3.zip;
+rm /tmp/opcn3_prometheus.zip;
 
 echo "Installing venv..";
 runuser -l opcn3 -c 'cd /home/opcn3/opcn3-prometheus-scraper; virtualenv venv -p python3;';
