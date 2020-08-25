@@ -6,12 +6,13 @@ import json
 import glob
 import signal
 import sys
+import socket
 
 from opcn3 import Opcn3
 from prometheus_client import Gauge, start_http_server
 
 DEV_TTY='/dev/ttyACM0'
-LOCATION = glob.glob('/boot/AGW*')[0][6:]
+LOCATION = socket.gethostname()
 PROMETHEUS_PORT=8000
 MEASURING_DELAY=10
 
